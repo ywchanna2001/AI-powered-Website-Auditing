@@ -51,7 +51,7 @@ Start the FastAPI server first:
 ```bash
 # Ensure you are in the root directory
 cd Backend
-uvicorn Backend.main:app --reload
+uvicorn main:app --reload
 ```
 
 - The backend will be running at: `http://127.0.0.1:8000`
