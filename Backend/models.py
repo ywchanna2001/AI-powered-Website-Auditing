@@ -13,7 +13,7 @@ class FactualMetrics(BaseModel):
     images_missing_alt_percentage: float
     meta_title: str | None
     meta_description: str | None
-    clean_text: str  # We will use this to feed the AI later
+    clean_text: str  
 
 
 class AIInsights(BaseModel):
@@ -26,7 +26,7 @@ class AIInsights(BaseModel):
 class Recommendation(BaseModel):
     priority: int
     recommendation: str
-    reasoning: str # Must be tied to factual metrics
+    reasoning: str 
 
 class AIAuditResult(BaseModel):
     insights: AIInsights

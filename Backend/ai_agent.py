@@ -11,7 +11,6 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 def log_prompt_trace(system_prompt: str, user_prompt: str, raw_input_data: dict, raw_output: str):
     """Saves the prompt logs to fulfill the assignment deliverable."""
-    # Move up one level from Backend/ to the root folder
     log_dir = os.path.join(os.path.dirname(__file__), "..", "Prompt_Logs")
     os.makedirs(log_dir, exist_ok=True)
     
@@ -59,7 +58,7 @@ IMPORTANT: You must return ONLY valid JSON that strictly conforms to this schema
 {json.dumps(schema_definition, indent=2)}
 """
 
-    # 3. Call Gemini 1.5 Flash with JSON mode enabled
+    # 3. Call Gemini 2.5 Flash with JSON mode enabled
     model = genai.GenerativeModel(
         model_name='gemini-2.5-flash',
         system_instruction=system_prompt

@@ -50,7 +50,7 @@ def scrape_website(url: str) -> FactualMetrics:
     # This is a basic heuristic. We count buttons and <a> tags that look like buttons.
     buttons = soup.find_all('button')
     cta_count = len(buttons)
-    # Optional: You can refine this later to look for classes like 'btn', 'button', etc.
+
     
     # 6. Images & Alt Text
     images = soup.find_all('img')
