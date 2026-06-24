@@ -32,7 +32,8 @@ source .venv/bin/activate
 
 
 ```bash
-pip install -r requirements.txt
+pip install -r Backend/requirements.txt
+pip install -r Frontend/requirements.txt
 ```
 
 ### 4. Setup Environment Variables
@@ -49,6 +50,7 @@ Start the FastAPI server first:
 
 ```bash
 # Ensure you are in the root directory
+cd Backend
 uvicorn Backend.main:app --reload
 ```
 
