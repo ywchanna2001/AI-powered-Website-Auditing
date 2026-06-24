@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 import google.generativeai as genai
 from dotenv import load_dotenv
-from .models import FactualMetrics, AIAuditResult
+from models import FactualMetrics, AIAuditResult
 
 # Load environment variables and configure Gemini
 load_dotenv()

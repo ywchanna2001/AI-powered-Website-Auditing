@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from .scraper import scrape_website
-from .ai_agent import analyze_website
-from .models import FullAuditResponse
+from scraper import scrape_website
+from ai_agent import analyze_website
+from models import FullAuditResponse
 
 app = FastAPI(title="AI Website Audit API")
 

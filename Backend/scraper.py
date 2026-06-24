@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
-from .models import FactualMetrics
+from models import FactualMetrics
 
 def scrape_website(url: str) -> FactualMetrics:
     # Set a user-agent to avoid being blocked by basic bot-protection
