@@ -5,6 +5,3 @@ requests
 pydantic
 google-generativeai
 python-dotenv
-streamlit
-requests
-pandas
