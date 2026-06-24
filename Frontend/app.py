@@ -1,12 +1,13 @@
 import streamlit as st
 import requests
 import pandas as pd
+import os
 
 # Set page configuration
 st.set_page_config(page_title="AI Website Auditor", page_icon="🔍", layout="wide")
 
 # Backend URL (Use localhost for now, we will change this during deployment)
-BACKEND_URL = "http://127.0.0.1:8000/api/audit"
+BACKEND_URL = os.getenv("BACKEND_API_URL", "http://127.0.0.1:8000/api/audit")
 
 st.title("🔍 AI-Powered Website Auditor")
 st.markdown("Enter a URL to get a comprehensive SEO and UX audit powered by AI.")
